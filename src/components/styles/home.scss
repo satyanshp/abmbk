@@ -1,0 +1,17 @@
+.app__home__container{
+    background: url('../../../public/assets/images/home.webp');
+    background-position: top;
+    background-size: cover;
+}
+.app__home__input{
+    font-family: Arial,sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(185, 182, 182, 0.51) !important;
+    height: 25px;
+    border: none;
+    outline: none;
+}
+.app__home__search{
+    border: 0.5px solid rgba(128, 128, 128, 0.603);
+}

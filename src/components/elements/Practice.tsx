@@ -1,0 +1,34 @@
+import Box from '@mui/material/Box'
+import React from 'react'
+
+const Practice = () => {
+  return (
+    <Box id='practice'>
+        <Box display='flex' height='70vh'>
+            <Box width='35%' sx={{background:'#EAF4F6'}} display='flex'>
+                <Box sx={{fontFamily: "'Raleway', sans-serif"}} fontSize='2.7rem' color='#00305B' textAlign='left' margin='10vh 0 0 10vw'>
+                    <Box fontWeight='700'>PRACTICE</Box>
+                    <Box fontWeight='400'>AREAS</Box>
+                </Box>
+            </Box>
+            <Box width='65%'>
+                <Box display='flex'>
+                    <ul style={{color:'#0F4C85',fontFamily: "'Open Sans', sans-serif",fontWeight:'bold',textTransform:'uppercase',textAlign:'left',lineHeight:'1.7rem',marginLeft:'1.7vw',marginTop:'1rem'}}>
+                        <li>Arbitration</li>
+                        <li>Contract</li>
+                        <li>Consumer</li>
+                        <li>Employment/Service</li>
+                        <li>Family Law</li>
+                        <li>Land Acquisition</li>
+                        <li>Real Estate</li>
+                        <li>Insolvency</li>
+                        <li>White Collar Crimes</li>
+                    </ul>
+                </Box>
+            </Box>
+        </Box>
+    </Box>
+  )
+}
+
+export default Practice
