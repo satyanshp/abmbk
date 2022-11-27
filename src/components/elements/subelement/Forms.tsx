@@ -37,7 +37,7 @@ const Forms = () => {
     >
       {({ errors, isValid, touched, dirty, handleSubmit }) => (
         <Form onSubmit={handleSubmit} className='form-container' style={{display:'flex',flexDirection:'column'}}>
-          <Box display='flex' width='95%' gap={2}>
+          <Box display='flex' flexDirection={{md:'row',xs:'column'}} width='95%' gap={2}>
             <Box flexGrow='1'>
               <Box display='flex' flexDirection='column'>
                 <label className='label' htmlFor="">Enter Your Name *</label>

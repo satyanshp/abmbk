@@ -1,9 +1,46 @@
 .app__blog__background{
-    background: url('../../../public/assets/images/slider/slider3.webp');
+    background: linear-gradient(0deg, rgba(147, 189, 248, 0.2), rgba(147, 189, 248, 0.2)), url('../../../public/assets/images/slider/slider3.webp');
     background-position: bottom;
+    // background-color: aquamarine;
     background-size: cover;
     min-height: 100vh;
     position: fixed;
-    top: 0;
+    top: 15%;
 
+}
+.app__blog__search{
+    border: none;
+    border-radius: 0 !important;
+    padding: 0px 0px !important;
+    border-bottom: 2px solid grey;
+}
+.app__blog__input{
+    font-family: Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(185, 182, 182, 0.51) !important;
+    max-width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 0 !important;
+    padding: 0px 0px !important;
+    outline: none;    
+}
+.app__blog__title{
+    cursor: pointer;
+    &:hover ~ .app__blog__des .app__blog__des__title{
+        color: #377DBD;
+    }
+}
+.app__blog__des{
+    cursor: pointer;
+    &:hover div{
+        color: #377DBD;
+    }
+}
+.app__blog__comments{
+    cursor: pointer;
+    &:hover{
+        color: #377DBD;
+    }
 }

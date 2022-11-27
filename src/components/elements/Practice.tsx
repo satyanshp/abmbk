@@ -4,7 +4,7 @@ import React from 'react'
 const Practice = () => {
   return (
     <Box id='practice'>
-        <Box display='flex' height='70vh'>
+        <Box display='flex' flexDirection={{xs:'column',md:'row'}} height='70vh'>
             <Box width='35%' sx={{background:'#EAF4F6'}} display='flex'>
                 <Box sx={{fontFamily: "'Raleway', sans-serif"}} fontSize='2.7rem' color='#00305B' textAlign='left' margin='10vh 0 0 10vw'>
                     <Box fontWeight='700'>PRACTICE</Box>

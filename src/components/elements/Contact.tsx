@@ -3,18 +3,21 @@ import React from 'react'
 import Forms from './subelement/Forms'
 import '../styles/contact.scss'
 
-const Contact = () => {
+interface contactProp{
+    contactActive:number;
+}
+const Contact = ({contactActive}:contactProp) => {
   return (
-    <Box position='relative' height='100vh' id='contact'>
+    <Box position='relative' id='contact'>
         <Box position='relative' zIndex='5 !important' height='100%' sx={{background:'rgb(15,76,133,0.8)'}}>
-            <Box display='flex' color='#FFFFFF' position='static' height='100%'>
-                <Box width='35%' height='100%' margin='auto' sx={{background:'#00305B96'}}>
-                    <Box>
+            <Box display='flex' flexDirection={{md:'row',xs:'column'}} color='#FFFFFF' position='static' height='100%'>
+                <Box width={{md:'35%',xs:'100%'}} height='100%' margin='auto' sx={{background:'#00305B96'}}>
+                    <Box height={{md:contactActive,xs:'50vh'}} display='flex' flexDirection='column'>
                         <Box height={'16vh'}/>
                         <Box sx={{fontFamily: "'Raleway', sans-serif"}} fontSize='2.7rem' fontWeight='400'>ABMK LAW<br/>CHAMBERS</Box>
                     </Box>
                 </Box>
-                <Box width='65%' height='100%' 
+                <Box width={{md:'65%',xs:'90%'}} margin={{xs:'auto',md:''}} height='100%' 
                     // sx={{background:'#00305B66'}}
                     paddingLeft='2.5vw'
                 >
@@ -33,12 +36,13 @@ const Contact = () => {
                                 <Forms/>
                             </Box>
                         </Box>
+                        <Box height={'11vh'}/>
                     </Box>
                 </Box>
             </Box>
         </Box>
         
-        <Box className='app__contact__background' zIndex='0' position='absolute' top='0' width='100%' height='100vh'></Box>
+        <Box className='app__contact__background' zIndex='0' position='absolute' top='0' width='100%' height='100%'></Box>
     </Box>
   )
 }
