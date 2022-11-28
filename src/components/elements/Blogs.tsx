@@ -39,6 +39,7 @@ interface BlogProps{
 const Blogs = ({searchOpen,onClickSearch,onClickClose,liked,onClickLike,onClickVerMenu,verMenu,onClick5,blogData,onClickBlog,onClickBlogNavLinks}:BlogProps) => {
     React.useEffect(() => {
       onClick5();
+      window.scrollTo({top: 0})
     }, [])
 
     const [blogMenuOpen, setBlogMenuOpen] = React.useState(false);
