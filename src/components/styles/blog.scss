@@ -44,3 +44,45 @@
         color: #377DBD;
     }
 }
+.app__blog__res__menu{  
+    height:0px;
+    // div{
+    //     @media screen and (max-width:800px) {
+    //         height: 0px;
+    //         animation-duration: 1s;
+    //         animation-name: blogMenuResCloseLinks;
+    //     }
+    //     &.active{
+    //         height: 6vh;
+    //         animation-duration: 1s;
+    //         animation-name: blogMenuResOpenLinks;
+    //     }
+    //     @keyframes blogMenuResOpenLinks {
+    //         from {height: 0px;}
+    //         to {height: 6vh;}
+    //     }
+    //     @keyframes blogMenuResCloseLinks {
+    //         from {height: 6vh;}
+    //         to {height: 0px;}
+    //     }
+    // }
+    @media screen and (max-width:800px) {
+        height: 0px;
+        animation-duration: 1s;
+        animation-name: blogMenuResClose;
+    }
+    &.active{
+        height: 100%;
+        animation-duration: 1s;
+        animation-name: blogMenuResOpen;
+    }
+
+    @keyframes blogMenuResOpen {
+        from {height: 0px;}
+        to {height: 100%;}
+    }
+    @keyframes blogMenuResClose {
+        from {height: 100%;}
+        to {height: 0px;}
+    }
+}
