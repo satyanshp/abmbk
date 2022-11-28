@@ -46,43 +46,43 @@
 }
 .app__blog__res__menu{  
     height:0px;
-    // div{
-    //     @media screen and (max-width:800px) {
-    //         height: 0px;
-    //         animation-duration: 1s;
-    //         animation-name: blogMenuResCloseLinks;
-    //     }
-    //     &.active{
-    //         height: 6vh;
-    //         animation-duration: 1s;
-    //         animation-name: blogMenuResOpenLinks;
-    //     }
-    //     @keyframes blogMenuResOpenLinks {
-    //         from {height: 0px;}
-    //         to {height: 6vh;}
-    //     }
-    //     @keyframes blogMenuResCloseLinks {
-    //         from {height: 6vh;}
-    //         to {height: 0px;}
-    //     }
-    // }
+    .app__blog__res__menu__links{
+        @media screen and (max-width:800px) {
+            opacity: 0;
+            animation-duration: 1s;
+            animation-name: blogMenuResCloseLinks;
+        }
+        &.active{
+            opacity: 1;
+            animation-duration: 1s;
+            animation-name: blogMenuResOpenLinks;
+        }
+        @keyframes blogMenuResOpenLinks {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes blogMenuResCloseLinks {
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
+    }
     @media screen and (max-width:800px) {
         height: 0px;
         animation-duration: 1s;
         animation-name: blogMenuResClose;
     }
     &.active{
-        height: 100%;
+        height: 45vh;
         animation-duration: 1s;
         animation-name: blogMenuResOpen;
     }
 
     @keyframes blogMenuResOpen {
         from {height: 0px;}
-        to {height: 100%;}
+        to {height: 45vh;}
     }
     @keyframes blogMenuResClose {
-        from {height: 100%;}
+        from {height: 45vh;}
         to {height: 0px;}
     }
 }

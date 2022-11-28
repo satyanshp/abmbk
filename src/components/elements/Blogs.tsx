@@ -84,13 +84,13 @@ const Blogs = ({searchOpen,onClickSearch,onClickClose,liked,onClickLike,onClickV
                                 <KeyboardArrowDownIcon sx={{display:'flex'}}/>
                             </Box>
                             <Box position='relative' className={blogMenuOpen?'app__blog__res__menu active':'app__blog__res__menu'} sx={{background:'#FFFFFF','>div':{height:'6vh',paddingLeft:'5vw',display:blogMenuOpen?'flex':'none',alignItems:'center'}}} >
-                                <Box borderBottom='1px solid rgb(221, 221, 221)' borderTop='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Arbitration</Box>
-                                <Box borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Labour Law</Box>
-                                <Box borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Property Law</Box>
-                                <Box borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Consumer Protection</Box>
-                                <Box borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Insolvency Law</Box>
-                                <Box borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>RERA</Box>
-                                <Box borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Service Law</Box>
+                                <Box className={blogMenuOpen?'app__blog__res__menu__links active':'app__blog__res__menu__links'} borderBottom='1px solid rgb(221, 221, 221)' borderTop='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Arbitration</Box>
+                                <Box className={blogMenuOpen?'app__blog__res__menu__links active':'app__blog__res__menu__links'} borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Labour Law</Box>
+                                <Box className={blogMenuOpen?'app__blog__res__menu__links active':'app__blog__res__menu__links'} borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Property Law</Box>
+                                <Box className={blogMenuOpen?'app__blog__res__menu__links active':'app__blog__res__menu__links'} borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Consumer Protection</Box>
+                                <Box className={blogMenuOpen?'app__blog__res__menu__links active':'app__blog__res__menu__links'} borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Insolvency Law</Box>
+                                <Box className={blogMenuOpen?'app__blog__res__menu__links active':'app__blog__res__menu__links'} borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>RERA</Box>
+                                <Box className={blogMenuOpen?'app__blog__res__menu__links active':'app__blog__res__menu__links'} borderBottom='1px solid rgb(221, 221, 221)'  onClick={()=>onClickBlogNavLinks()}>Service Law</Box>
                             </Box>
                         </Box>
                         <Box display={{md:'flex',xs:'none'}} gap={4} sx={{'>div':{cursor:'pointer','&:hover':{color:'#377DBD','>div':{color:'#000000'}}}}}>
