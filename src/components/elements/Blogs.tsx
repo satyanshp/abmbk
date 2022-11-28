@@ -9,10 +9,6 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import CloseIcon from '@mui/icons-material/Close';
 import ReplyOutlinedIcon from '@mui/icons-material/ReplyOutlined';
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
-
-import { FaFacebookF,FaTwitter,FaLinkedinIn,FaLink } from 'react-icons/fa';
 
 import '../styles/blog.scss'
 
@@ -45,26 +41,6 @@ const Blogs = ({searchOpen,onClickSearch,onClickClose,liked,onClickLike,onClickV
       onClick5();
     }, [])
 
-    const Tag = styled(Paper)(({ theme }) => ({
-        fontSize:'0.85rem',
-         minHeight:'31.8px',
-         border:'1px solid rgb(221, 221, 221)',
-         borderRadius:'0px',
-         display:'flex',
-         justifyContent:'center',
-         alignItems:'center',
-         flexWrap:'wrap',
-        boxShadow:"none",
-        color: '#000000',
-        fontFamily: "Open Sans",
-        fontStyle: 'normal',
-        fontWeight: '400',
-        textAlign:'center',
-        lineHeight: '16px',
-        cursor:'pointer',
-        padding:'0 15px',
-        '&:hover':{border:'1px solid #000000'}
-    }));
     const [blogMenuOpen, setBlogMenuOpen] = React.useState(false);
     const blogOnClickMenu = () =>{
         setBlogMenuOpen(!blogMenuOpen);
