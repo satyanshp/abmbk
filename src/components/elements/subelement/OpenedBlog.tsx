@@ -160,7 +160,7 @@ const OpenedBlog = ({searchOpen,onClickSearch,onClickClose,liked,onClickLike,onC
                                             <Box height={15}/>
                                             <Box>{blogData.overview}</Box>
                                             <Box height={10}/>
-                                            <Box width='100%'><img style={{width:'100%',height:'100%',objectFit:'cover'}} src={blogData.img} alt="" /></Box>
+                                            {blogData.img && <Box width='100%'><img style={{width:'100%',height:'100%',objectFit:'cover'}} src={blogData.img} alt="" /></Box>}
                                             <Box height={10}/>
                                             <Box display='flex' flexWrap='wrap' gap={1}>
                                                 <Tag>cjhdsh</Tag>
