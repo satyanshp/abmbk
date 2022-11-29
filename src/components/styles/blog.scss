@@ -47,7 +47,7 @@
 .app__blog__res__menu{  
     height:0px;
     .app__blog__res__menu__links{
-        @media screen and (max-width:800px) {
+        @media screen and (max-width:900px) {
             opacity: 0;
             animation-duration: 1s;
             animation-name: blogMenuResCloseLinks;
@@ -66,7 +66,7 @@
             to {opacity: 0;}
         }
     }
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         height: 0px;
         animation-duration: 1s;
         animation-name: blogMenuResClose;

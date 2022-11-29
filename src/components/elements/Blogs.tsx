@@ -56,7 +56,7 @@ const Blogs = ({searchOpen,onClickSearch,onClickClose,liked,onClickLike,onClickV
                 <Box>
                     <Box display='flex' flexDirection={{md:'row',xs:'column-reverse'}} justifyContent='space-between' height={{md:'12vh',xs:'fit-content'}} alignItems='center' padding={{md:'0px 25px',xs:'0px'}}>
                         <Box width='100%' display={{md:'none',xs:'flex'}} flexDirection='column'>
-                            <Box onClick={()=>blogOnClickMenu()} margin='auto' display={{md:'none',xs:'flex'}} alignItems='center' width='90%' justifyContent='space-between' sx={{'@media (max-width:800px)':{height:'6vh'}}}>
+                            <Box onClick={()=>blogOnClickMenu()} margin='auto' display={{md:'none',xs:'flex'}} alignItems='center' width='90%' justifyContent='space-between' sx={{'@media (max-width:900px)':{height:'6vh'}}}>
                                 <Box>All Posts</Box>
                                 <KeyboardArrowDownIcon sx={{display:'flex'}}/>
                             </Box>
@@ -88,11 +88,11 @@ const Blogs = ({searchOpen,onClickSearch,onClickClose,liked,onClickLike,onClickV
                                 </Box>
                             </Box>
                         </Box>
-                        <Box display='flex' alignItems='center' justifyContent={'space-between'} sx={{'@media (max-width:800px)':{background:'#377DBD',height:'6vh'}}} width={{xs:'100%',md:'fit-content'}}>
+                        <Box display='flex' alignItems='center' justifyContent={'space-between'} sx={{'@media (max-width:900px)':{background:'#377DBD',height:'6vh'}}} width={{xs:'100%',md:'fit-content'}}>
                             {!searchOpen && <Box display={{xs:'flex',md:'none'}} marginLeft='5vw' color='#FFFFFF'>ABMK LAW BLOG</Box>}
                             <Box display='flex' alignItems='center' gap={{md:5,xs:2}}>
                             <Box display='flex' alignItems='center'>
-                                {!searchOpen && <SearchIcon sx={{cursor:'pointer','@media (max-width:800px)':{color:'#FFFFFF'}}} onClick={()=>onClickSearch()}/>}
+                                {!searchOpen && <SearchIcon sx={{cursor:'pointer','@media (max-width:900px)':{color:'#FFFFFF'}}} onClick={()=>onClickSearch()}/>}
                                 {searchOpen && 
                                     <Box className='app__blog__search' display='flex' minWidth='150px' padding='0 5px' height='30px' alignItems='center' borderRadius='2.5px' sx={{background:'#FFFFFF'}}>
                                         <Box display='flex' marginRight='3px'><SearchIcon sx={{color:'black',width:'19px'}}/></Box>
@@ -113,7 +113,7 @@ const Blogs = ({searchOpen,onClickSearch,onClickClose,liked,onClickLike,onClickV
                                         textTransform:'capitalize',
                                         boxShadow:'none',
                                         width:'155px',
-                                        '@media (max-width:800px)':{
+                                        '@media (max-width:900px)':{
                                             width:'100px !important',
                                         }
                                     }}
@@ -133,7 +133,7 @@ const Blogs = ({searchOpen,onClickSearch,onClickClose,liked,onClickLike,onClickV
                                         textTransform:'capitalize',
                                         boxShadow:'none',
                                         width:'155px',
-                                        '@media (max-width:800px)':{
+                                        '@media (max-width:900px)':{
                                             width:'100px !important',
                                         }
                                     }}

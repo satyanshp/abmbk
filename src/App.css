@@ -27,7 +27,7 @@
   align-items: center;
   
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .app__navbar{
     position: relative;
     padding-top: 10px;
