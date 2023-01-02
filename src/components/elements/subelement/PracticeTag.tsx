@@ -6,9 +6,8 @@ interface PracticeTagProp{
     name:string;
     width:string;
     contWidth:string;
-    textWidth:string;
 }
-const PracticeTag = ({img,name,width,contWidth,textWidth}:PracticeTagProp) => {
+const PracticeTag = ({img,name,width,contWidth}:PracticeTagProp) => {
   return (
     <Box sx={{
             border: '1px solid #E0A965',
@@ -26,7 +25,7 @@ const PracticeTag = ({img,name,width,contWidth,textWidth}:PracticeTagProp) => {
             <Box display='flex' width='50%'>
                 <Box display='flex' width={contWidth} flexDirection='column' justifyContent='flex-end' alignItems='flex-end' marginRight='1.1vw' textAlign='right' marginBottom='1.1vh'>
                     <Box 
-                        width={textWidth}
+                        width={'100%'}
                         sx={{
                             fontFamily: 'Open Sans',
                             fontStyle: 'normal',
@@ -39,7 +38,7 @@ const PracticeTag = ({img,name,width,contWidth,textWidth}:PracticeTagProp) => {
                     >{name}</Box>
                     <Box 
                         textAlign='right'
-                        width={textWidth}
+                        width={'100%'}
                         sx={{
                             fontFamily: 'Raleway',
                             fontStyle: 'normal',
@@ -48,6 +47,7 @@ const PracticeTag = ({img,name,width,contWidth,textWidth}:PracticeTagProp) => {
                             lineHeight: '19px',
                             textDecorationLine: 'underline',
                             color: '#E0A965',
+                            cursor:'pointer'
                         }}
                     >Learn more</Box>
                 </Box>

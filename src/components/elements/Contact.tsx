@@ -21,7 +21,7 @@ const Contact = ({contactActive}:contactProp) => {
                 <Box width={{md:'58%',xs:'90%'}} margin={{xs:'auto',md:''}} height='100%' 
                     // sx={{background:'#00305B66'}}
                 >
-                    <Box height={{md:'17vh',xs:'7vh'}}/>
+                    <Box height={{md:'16.5vh',xs:'7vh'}}/>
                     <Box fontFamily= "'Raleway', sans-serif" textAlign='left' width='80%' margin='auto'>
                         <Box fontSize='1.5rem' textTransform='uppercase'>
                             <Box fontWeight='700'>Our Address</Box>
