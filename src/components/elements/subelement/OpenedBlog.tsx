@@ -252,7 +252,7 @@ const OpenedBlog = ({searchOpen,onClickSearch,onClickClose,liked,onClickLike,onC
             </Box>
             <Box height={10}/>
             <Box display='flex' flexDirection='column' position='relative' zIndex='2' width='65%' margin='0 auto'>
-                <Box fontFamily= "'Open Sans', sans-serif" color='#0F4C85' fontSize='0.85rem' textAlign={{md:'left',xs:'center'}} width='90%' margin='auto'>© ABMK LAW CHAMBERS</Box>
+                <Box fontFamily= "'Open Sans', sans-serif" color='#0F4C85' fontSize='0.85rem' textAlign={{md:'left',xs:'center'}} width='90%' margin='auto'>© Law chambers of Akanksha Choudhary</Box>
                 <Box display={{md:'none',xs:'block'}} height={10}/>
                 <Box marginBottom={5} display='flex' justifyContent='center' gap={1}>
                     <Box display='flex' width='23px' height='23px'><img style={{width:'100%',objectFit:'contain'}} src="/assets/images/linkedin.webp" alt="linkedin" /></Box>

@@ -1,29 +1,37 @@
 import Box from '@mui/material/Box'
 import React from 'react'
+import PracticeTag from './subelement/PracticeTag'
 
 const Practice = () => {
   return (
     <Box id='practice'>
-        <Box display='flex' flexDirection={{xs:'column',md:'row'}} height='70vh'>
-            <Box width={{md:'35%',xs:'100%'}} sx={{background:'#EAF4F6'}} display='flex'>
-                <Box sx={{fontFamily: "'Raleway', sans-serif"}} fontSize='2.7rem' color='#00305B' textAlign='left' margin={{md:'10vh 0 0 10vw',xs:'5vh 0 5vh 10vw'}}>
+        <Box display='flex' flexDirection={{xs:'column',md:'row'}} >
+            <Box width={{md:'40%',xs:'100%'}} sx={{background:'#48504B'}} display='flex'>
+                <Box sx={{fontFamily: "'Raleway', sans-serif"}} fontSize='2.7rem' color='#FFFFFF' textAlign='left' margin={{md:'30vh 0 0 10vw',xs:'5vh 0 5vh 10vw'}}>
                     <Box fontWeight='700'>PRACTICE</Box>
                     <Box fontWeight='400'>AREAS</Box>
                 </Box>
             </Box>
-            <Box width={{md:'65%',xs:'100%'}}>
-                <Box display='flex'>
-                    <ul style={{color:'#0F4C85',fontFamily: "'Open Sans', sans-serif",fontWeight:'bold',textTransform:'uppercase',textAlign:'left',lineHeight:'1.7rem',marginLeft:'1.7vw',marginTop:'1rem'}}>
-                        <li>Arbitration</li>
-                        <li>Contract</li>
-                        <li>Consumer</li>
-                        <li>Employment/Service</li>
-                        <li>Family Law</li>
-                        <li>Land Acquisition</li>
-                        <li>Real Estate</li>
-                        <li>Insolvency</li>
-                        <li>White Collar Crimes</li>
-                    </ul>
+            <Box width={{md:'60%',xs:'100%'}}>
+                <Box display='grid'
+                    width='86%'
+                    margin='8vh auto'
+                    sx={{
+                        gridAutoFlow:'row dense',
+                        gridAutoRows:'150px', 
+                        gridTemplateColumns:'48% 48%',  
+                        gap:'2vw' 
+                    }}
+                >
+                    <PracticeTag name='Arbitration' img='/assets/images/practice/ARBITRATION.svg' width='65%' textWidth='75%' contWidth='100%'/>
+                    <PracticeTag name='Contract' img='/assets/images/practice/CONTRACT.svg'  width='82%' textWidth='75%' contWidth='100%'/>
+                    <PracticeTag name='Consumer' img='/assets/images/practice/CONSUMER.svg'  width='70%' textWidth='75%' contWidth='100%'/>
+                    <PracticeTag name='Employment/Service' img='/assets/images/practice/EMPLOYMENT_SERVICE.svg'  width='60%' textWidth='95%' contWidth='100%'/>
+                    <PracticeTag name='Family Law' img='/assets/images/practice/FAMILY_LAW.svg'  width='120%' textWidth='75%' contWidth='100%'/>
+                    <PracticeTag name='Land Acquisition' img='/assets/images/practice/Land_Acquisition.svg'  width='60%' textWidth='75%' contWidth='100%'/>
+                    <PracticeTag name='Real Estate' img='/assets/images/practice/REAL_ESTATE.svg'  width='60%' textWidth='75%' contWidth='100%'/>
+                    <PracticeTag name='Insolvency' img='/assets/images/practice/INSOLVENCY.svg'  width='60%' textWidth='75%' contWidth='100%'/>
+                    <PracticeTag name='White Collar Crimes' img='/assets/images/practice/WHITE_COLLAR_CRIMES.svg'  width='60%' textWidth='100%' contWidth='100%'/>
                 </Box>
             </Box>
         </Box>

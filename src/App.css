@@ -90,17 +90,17 @@
   transition: 0.3s;
 }
 .app__navbar .app__navbar__links a:hover{
-  color: #0F4C85 !important;
+  color: rgba(224, 169, 101, 1) !important;
   cursor: pointer;
   transition: 0.3s;
 }
 .app__navbar__header{
   font-family: 'Noticia Text', serif;
   font-size: 1.4rem;
-  color: #00305B !important;
+  color: rgba(224, 169, 101, 1) !important;
 }
 .app__navbar__header a{
-  color: #00305B !important; 
+  color: rgba(224, 169, 101, 1) !important; 
 }
 
 

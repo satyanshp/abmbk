@@ -3,10 +3,10 @@ import React from 'react'
 
 const About = () => {
   return (
-    <Box display='flex' color='#FFFFFF' sx={{background:'rgb(0,48,91,1)'}} id='about'>
+    <Box display='flex' color='rgba(72, 80, 75, 1)' sx={{background:'linear-gradient(0deg, #E0A965, #E0A965), rgba(187, 187, 187, 0.48)'}} id='about'>
         <Box width={{md:'68%',xs:'85%'}} margin='auto' textAlign={{md:'left',xs:'justify'}}>
             <Box height={120}/>
-            <Box sx={{fontFamily: "'Raleway', sans-serif"}} fontSize='2.7rem' textAlign='center'>ABOUT US</Box>
+            <Box sx={{fontFamily: "'Raleway', sans-serif",fontWeight:'600'}} fontSize='2.7rem' textAlign='center'>About Us</Box>
             <Box height={36}/>
             <Box fontFamily= "'Open Sans', sans-serif" marginBottom={'20vh'}>
                 <Box>
@@ -24,7 +24,7 @@ const About = () => {
                     <Box component='ul' paddingLeft={{md:'2rem',xs:'1.5rem'}}>
                         <li>A well established Tax Litigation and Advisory law firm.</li>
                         <li>
-                            A leading Advocate-on-Record who has a successBox legal practice with special focus on the Supreme Court of India. 
+                            A leading Advocate-on-Record who has a successful legal practice with special focus on the Supreme Court of India. 
                             During her stint she worked on many matters requiring interpretation of the Constitution of India, Central and State Laws, 
                             Arbitration Laws,Land Acquisition Laws,Education Laws among many others.
                         </li>

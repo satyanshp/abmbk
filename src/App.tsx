@@ -28,7 +28,7 @@ function App() {
   const [blogData,setBlogData] =useState([
     {
       title:"S.11: Scope of Judicial Review when maintainability objections are 'plainly arguable'",
-      author:'ABMK LAW CHAMBERS',
+      author:'Law chambers of Akanksha Choudhary',
       time:'2 min',
       date:'Mar 13',
       img:'/assets/images/home.webp',
@@ -40,7 +40,7 @@ function App() {
     },
     {
       title:"S.11: Scope of Judicial Review when maintainability objections are 'plainly arguable'",
-      author:'ABMK LAW CHAMBERS',
+      author:'Law chambers of Akanksha Choudhary',
       time:'2 min',
       date:'Mar 13',
       img:'',
@@ -171,18 +171,6 @@ function App() {
 
   const [blogOpened, setBlogOpened] = useState(false);
 
-//   interface blogDataIndex:{
-//     title:string,
-//     author:string,
-//     time:string,
-//     date:string,
-//     img:string,
-//     overview:string,
-//     views:string,
-//     comments:string,
-//     likes:string,
-//     liked:boolean,
-// };
   const [indexOpenedBlog, setIndexOpenedBlog] = useState<{title:string,author:string,time:string,date:string,img:string,overview:string,views:string,comments:string,likes:string,liked:boolean,}>({
     title:'',
     author:'',
@@ -275,7 +263,7 @@ function App() {
         </Routes>
         {popup && <Notice onClick={()=>setPopup(false)}/>}
         <Box position='fixed' display={{xs:'none',md:'block'}} zIndex='30' bottom='0' right='3vh'>
-          <Button variant='contained'sx={{background:'rgb(15, 76, 133)',color:'#FFFFFF',fontFamily: "'Raleway', sans-serif",borderRadius:'0',height:'8vh',width:'13vw',fontSize:'1.1rem',display:'flex',alignItems:'center'}}>CHAT WITH US!</Button>
+          <Button variant='contained'sx={{background:'#48504B',color:'#FFFFFF',fontFamily: "'Raleway', sans-serif",borderRadius:'0',height:'8vh',width:'13vw',fontSize:'1.1rem',display:'flex',alignItems:'center'}}>CHAT WITH US!</Button>
         </Box>
         <Box position='fixed' display={{xs:'block',md:'none'}} zIndex='30' top='3vh' right='3vh'>
           <Button variant='contained'
@@ -300,7 +288,7 @@ function App() {
               borderRadius:'50%',
               height:'5rem',
               width:'5rem',
-              background:'rgb(15, 76, 133)'
+              background:'#48504B'
             }}
           >
             <ChatRoundedIcon sx={{color:'#FFFFFF',fontSize:'2rem'}} />
@@ -314,7 +302,7 @@ function App() {
               width:'4rem',
               aspectRatio:'1',
               border:'1px solid #FFFFFF',
-              background:'rgb(15, 76, 133)'
+              background:'#48504B'
             }}
           >
             <ArrowBackIosNewIcon sx={{color:'#FFFFFF',fontSize:'2rem',transform:'rotate(90deg)',fontWeight:'300'}} />
