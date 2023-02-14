@@ -56,8 +56,8 @@
   "devDependencies": {
     "@types/react-anchor-link-smooth-scroll": "^1.0.2",
     "gh-pages": "^4.0.0",
-    "node-sass": "^7.0.3",
-    "sass-loader": "^13.2.0",
-    "nth-check": ">=2.0.1"
+    "nth-check": ">=2.0.1",
+    "sass": "^1.58.1",
+    "sass-loader": "^13.2.0"
   }
 }
