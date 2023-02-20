@@ -73,7 +73,7 @@ const Nav = ({
 						</Link>
 					</div>
 
-					<div className='app__navbar__links' onClick={() => onClick5()}>
+					{/* <div className='app__navbar__links' onClick={() => onClick5()}>
 						<Link
 							to='/blog'
 							style={{
@@ -84,7 +84,7 @@ const Nav = ({
 							{' '}
 							BLOG
 						</Link>
-					</div>
+					</div> */}
 					<div className='app__navbar__links' onClick={() => onClick6()}>
 						<Link
 							to='*'
@@ -148,7 +148,7 @@ const Nav = ({
 						COUNSELS
 					</Link>
 				</div>
-				<div className='app__navbar__links' onClick={() => onClick5()}>
+				{/* <div className='app__navbar__links' onClick={() => onClick5()}>
 					<Link
 						to='/blog'
 						style={{
@@ -158,7 +158,7 @@ const Nav = ({
 					>
 						LAW BLOG
 					</Link>
-				</div>
+				</div> */}
 				<div className='app__navbar__links' onClick={() => onClick6()}>
 					<Link
 						to='*'
