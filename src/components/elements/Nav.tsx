@@ -137,7 +137,7 @@ const Nav = ({
 						PRACTICE AREAS
 					</Link>
 				</div>
-				<div className='app__navbar__links' onClick={() => onClick4()}>
+				{/* <div className='app__navbar__links' onClick={() => onClick4()}>
 					<Link
 						to='*'
 						style={{
@@ -147,7 +147,7 @@ const Nav = ({
 					>
 						COUNSELS
 					</Link>
-				</div>
+				</div> */}
 				{/* <div className='app__navbar__links' onClick={() => onClick5()}>
 					<Link
 						to='/blog'
